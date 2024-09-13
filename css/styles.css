@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@import url('https://db.onlinewebfonts.com/c/30656cc4821640a4edcb1608cb4b8e56?family=AachenDEEMed');
+@import url('https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Devonshire:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/* Body, sections, div, ... -----------------------------------------------------------------*/
+
+html {
+    background-color: #000000;
+}
+
+body {
+    margin: 1%;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    display: flex;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "div-title div-title"
+        "div-img div-video";
+    grid-area: 1 / 2 / 2 / 3;
+    flex: 1 1 200px;
+}
+
+.div-title {
+    grid-area: div-title;
+}
+
+.div-img {
+    grid-area: div-img;
+    padding: 10px;
+}
+
+.div-video {
+    grid-area: div-video;   
+    padding: 10px;
+    padding-bottom: 50px;   
+}
+
+footer {
+    text-align: left;
+    padding-top: 5px;
+}
+
+/* Movie Poster -----------------------------------------------------------------*/
+.poster {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    min-width: 600px;
+    min-height: 800px;
+}
+
+.movie-img {
+    position: relative;
+    background-color: #E73918;
+    background-image: url("../images/uma.svg");
+    /*original size: 1117px x 1600px*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    gap: 0px 0px;
+}
+
+.top,
+.credits {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.center {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 24%;
+}
+
+/* Media -----------------------------------------------------------------*/
+#imgstudios {
+    margin: 0;
+    margin-top: -5px;
+}
+
+iframe,
+img {
+    margin: 10px;
+}
+
+.fig-Img {
+    border: none;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4px;
+    max-width: 279.25px;
+    margin: auto;
+}
+
+.fig-Video {
+    border: none;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4px;
+    max-width: 533.33px;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: rgb(204, 203, 203);
+    font: smaller sans-serif;
+}
+
+/* Font -----------------------------------------------------------------*/
+h1 {
+    font-family: 'AachenDEEMed', Arial, Helvetica, sans-serif;
+    color: #EAC223;
+    text-shadow: -2px 2px black;
+    font-size: 90px;
+    margin: 0px;
+    justify-content: center;
+    margin-bottom: -5px;
+}
+
+#h2title {
+    font-family: 'AachenDEEMed', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+
+#h2actors {
+    font-family: 'AachenDEEMed', Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #EAC223;
+    margin: auto;
+    letter-spacing: -1px;
+}
+
+#h2aside {
+    font-family: 'AachenDEEMed', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: rgb(204, 203, 203);
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 2%;
+}
+
+#h3aside {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(204, 203, 203);
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Devonshire', Arial, Helvetica, cursive;
+    color: black;
+    font-size: 26px;
+    margin: auto;
+}
+
+h4 {
+    color: #EAC223;
+    font-family: 'Devonshire', Arial, Helvetica, cursive;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+h5 {
+    color: #EAC223;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 25px;
+    margin-top: 1px;
+}
+
+#h6bigger {
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(204, 203, 203);
+    display: inline-block;
+    letter-spacing: -0.7px;
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
+
+#h6smaller {
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    color: rgb(204, 203, 203);
+    display: inline-block;
+    letter-spacing: -0.7px;
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
+
+p {
+    color: rgb(204, 203, 203);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(204, 203, 203);
+}
